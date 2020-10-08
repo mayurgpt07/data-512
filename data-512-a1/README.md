@@ -1,6 +1,6 @@
 # data-512
 ## Assignment-1: Data Curation
-For the purpose of the assignment we combine the data about Wikipedia page traffic from two different API's into a single dataset, perform some simple data processing steps on the data and analyze the data
+For the purpose of the assignment we combine the data about Wikipedia page traffic from two different API's into a single dataset, perform some simple data processing steps on the data and analyze the data. The goal of this assignment is to construct, analyze, and publish a dataset of monthly traffic on English Wikipedia from January 1 2008 through August 30 2020. The purpose of the assignment is to familiarize one with the Jupyter Notebook environment for data collection to data analysis.
 
 ### Data Sources
 The Wikipedia page traffic API is split into two seperate endpoints based on the date as:
@@ -14,6 +14,32 @@ The Wikipedia page traffic API is split into two seperate endpoints based on the
 
 The documentations is available under [Creative Commons Attribution-ShareAlike License](https://creativecommons.org/licenses/by-sa/3.0/) <br />
 See [Terms of Use](https://foundation.wikimedia.org/wiki/Terms_of_Use) for details.
+
+### Folder Contents
+```
+.
+├── README.md
+├── data
+│   ├── json
+│       ├── pagecounts_desktop-site_200801-201607.json
+│       ├── pagecounts_mobile-site_200801-201607.json
+│       ├── pagecounts_all-access_200801-201607.json
+│       ├── pageviews_all-access_201507-202009.json
+│       ├── pageviews_mobile-app_201507-202009.json
+│       ├── pageviews_mobile-web_201507-202009.json
+│       └── pageviews_mobile-site_201507-202009.json
+│   └── csv
+│       ├── pagecounts_desktop-site_200801-201607.csv
+│       ├── pagecounts_mobile-site_200801-201607.csv
+│       ├── pagecounts_all-access_200801-201607.csv
+│       ├── pageviews_all-access_201507-202009.csv
+│       ├── pageviews_mobile-app_201507-202009.csv
+│       ├── pageviews_mobile-web_201507-202009.csv
+│       ├── pageviews_mobile-site_201507-202009.csv
+│       └── en-wikipedia_traffic_200801-202009.csv
+├── Assignment1.ipynb
+└── english-wikipedia-views-2008-2020.jpg
+```
 
 ### Consolidated Data Description
 * **year** - Year(YYYY) of the page view
@@ -49,6 +75,21 @@ Follow the steps to successfully execute the jupyter notebook:
 8) The jupyter notebook is up and running now
 9) You can execute the notebook by running (Shift + Enter) each cell **sequentially**  or use **Kernel >> Restart & Run all**
 
+### Methodology
+#### Step 1: Data Collection
+
+Data collection is done making multiple API requests to the required endpoints and storing the results in JSON/CSV output.
+
+#### Step 2: Data Processing
+
+For data collected from the Pageviews API, combine the monthly values for mobile-app and mobile-web to create a total mobile traffic count for each month.
+After that we seperate the value of timestamp into four-digit year (YYYY) and two-digit month (MM) and discard values for day and hour (DDHH). Combine the different dataframes from the all request to get the final datafrae with the schema specified above
+
+#### Step 3: Data Analysis
+
+Plot a timeseries graph from January 1 2008 to September 30 2020 for different access methods (all device, mobile and desktop)
+
+![Time Series Graph](./AnalysisImage.png)
 
 ### Additional Details
 * There is an overlap of about 1 year in the data from both the API's <br />
