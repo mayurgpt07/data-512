@@ -23,16 +23,26 @@ See [Terms of Use](https://foundation.wikimedia.org/wiki/Terms_of_Use) for detai
 * **pagecount_mobile_views** (C) - Count of views on any page from either mobile website or mobile app in the date range 2008-01-01 to 2016-07-30
 * **pageview_all_views** (V) - Count of views on any page from any device in the date range 2015-07-01 to 2020-09-30
 * **pageview_desktop_views** (V) - Count of views on any page from desktop website in the date range 2015-07-01 to 2020-09-30
-* **pageview_mobile_views** (V) - Count of views on any page from either mobile website or mobile app in the date range 2015-07-01 to 2020-09-30
+* **pageview_mobile_views** (V) - Count of views on any page from either mobile website or mobile app in the date range 2015-07-01 to 2020-09-30 <br />
 (C) - column data source is Legacy Pagecounts API <br />
 (V) - column data source is Pageviews API
 
+### Requirements
+For the purpose of fetching data, processing and analyzing it, we require the following:
+1) [Python](https://www.python.org/downloads/) - Langauage used to program
+2) [Anaconda](https://docs.anaconda.com/anaconda/install/) - Required to set up jupyter notebook 
+2) [requests](https://requests.readthedocs.io/en/master/user/install/) - Enables python code to access the API using GET, POST, UPDATE or DELETE request
+3) json - Enables python code to access the json object from the request and save it
+4) csv - Enables python code to create CSV files for the different types of data
+5) [pandas](https://pandas.pydata.org/docs/getting_started/install.html) - Enables python code to load data from csv files and perform necessary data processing
+6) [matplotlib](https://matplotlib.org/users/installing.html) - Enables python code to create visualizations and graphs
+
 ### Steps to run
 Follow the steps to successfully execute the jupyter notebook:
-1) Download the folder **data-512-a1**
+1) Download the folder **data-512-a1** or use git clone *repository url*
 2) Unzip the folder if you have downloaded from github (no need to unzip if you have cloned the repository on your system)
 3) Change directory to **data-512-a1** (cd data-512-a1)
-4) Using Command Line on Windows or Terminal on Mac/Linux run the command **jupyter notebook**
+4) Using Command Line on Windows or Terminal on Mac/Linux run the command **jupyter notebook** in the directory
 5) The command will open a URL similar to ***http://localhost:8888/tree*** in your default browser (The port 8888 might change if it is already occupied)
 6) You will be able to see all files of the folder **data-512-a1**
 7) Double click on the file **Assignment1.ipynb** to open it
