@@ -37,8 +37,8 @@ See [Terms of Use](https://foundation.wikimedia.org/wiki/Terms_of_Use) for detai
 │       ├── pageviews_mobile-web_201507-202009.csv
 │       ├── pageviews_mobile-site_201507-202009.csv
 │       └── en-wikipedia_traffic_200801-202009.csv
-├── Assignment1.ipynb
-└── english-wikipedia-views-2008-2020.jpg
+├── wikipedia-views-2008-2020.ipynb
+└── wikipedia-views-2008-2020.png
 ```
 
 ### Consolidated Data Description
@@ -89,7 +89,7 @@ After that we seperate the value of timestamp into four-digit year (YYYY) and tw
 
 Plot a timeseries graph from January 1 2008 to September 30 2020 for different access methods (all device, mobile and desktop)
 
-![Time Series Graph](./AnalysisImage.png)
+![Time Series Graph](./wikipedia-views-2008-2020.png)
 
 ### Additional Details
 * There is an overlap of about 1 year in the data from both the API's <br />
