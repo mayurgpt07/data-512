@@ -71,7 +71,7 @@ Follow the steps to successfully execute the jupyter notebook:
 4) Using Command Line on Windows or Terminal on Mac/Linux run the command **jupyter notebook** in the directory
 5) The command will open a URL similar to ***http://localhost:8888/tree*** in your default browser (The port 8888 might change if it is already occupied)
 6) You will be able to see all files of the folder **data-512-a1**
-7) Double click on the file **Assignment1.ipynb** to open it
+7) Double click on the file **wikipedia-views-2008-2020.ipynb** to open it
 8) The jupyter notebook is up and running now
 9) You can execute the notebook by running (Shift + Enter) each cell **sequentially**  or use **Kernel >> Restart & Run all**
 
