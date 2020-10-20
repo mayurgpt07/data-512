@@ -43,7 +43,7 @@ Retrieved: 13 00, Oct 31, 2016 (GMT)
 │   ├── FirstLanguageDistributionAnnotators.png
 │   ├── GenderDistributionAnnotator.png
 │   ├── GenderDistributionWorker.png
-│   ├── MostCommonWords.png
+│   ├── EducationDistributionWorker.png
 │   ├── ToxicAnnotatorsAge.png
 │   ├── ToxicAnnotatorsEducation.png
 │   ├── ToxicAnnotatorsFirstLanguage.png
