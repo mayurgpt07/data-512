@@ -37,8 +37,18 @@ Retrieved: 13 00, Oct 31, 2016 (GMT)
 │   ├── toxicity_annotated_comments.tsv
 │   ├── toxicity_annotations.tsv
 │   └── toxicity_worker_demographics.tsv
-├── wikipedia-views-2008-2020.ipynb
-└── wikipedia-views-2008-2020.png
+├── images
+│   ├── AgeDistributionAnnotators.png
+│   ├── AgeDistributionWorker.png
+│   ├── FirstLanguageDistributionAnnotators.png
+│   ├── GenderDistributionAnnotator.png
+│   ├── GenderDistributionWorker.png
+│   ├── MostCommonWords.png
+│   ├── ToxicAnnotatorsAge.png
+│   ├── ToxicAnnotatorsEducation.png
+│   ├── ToxicAnnotatorsFirstLanguage.png
+│   └── ToxicAnnotatorsGender.png
+└── ToxicAnalysis.ipynb
 ```
 
 ### Requirements
@@ -60,7 +70,7 @@ Follow the steps to successfully execute the jupyter notebook:
 4) Using Command Line on Windows or Terminal on Mac/Linux run the command **jupyter notebook** in the directory
 5) The command will open a URL similar to ***http://localhost:8888/tree*** in your default browser (The port 8888 might change if it is already occupied)
 6) You will be able to see all files of the folder **data-512-a2**
-7) Double click on the file **.ipynb** to open it
+7) Double click on the file **ToxicAnalysis.ipynb** to open it
 8) The jupyter notebook is up and running now
 9) You can execute the notebook by running (Shift + Enter) each cell **sequentially**  or use **Kernel >> Restart & Run all**
 
@@ -77,7 +87,9 @@ Go through the above mentioned readings to understand the purpose of research an
 
 Analyze the data by combining multiple datasets. In the assignment we are exploring the worker demographics, their impact on Toxic annotations and the most frequently occuring words in the toxic annotated reviews 
 
-![Time Series Graph](./wikipedia-views-2008-2020.png)
+The output visualizations for the analysis can be found [here](https://github.com/mayurgpt07/data-512/tree/master/data-512-a2/images)
 
 ### Additional Details
 * For this assignment the review is labelled toxic if half or more than half of workers annotate the review as toxic  <br />
+* Some of the annotator demographic information is not present in *toxicity_worker_demographics.tsv* file. Hence the distrbution of worker demographics are done twice
+* Due to offensive nature of words the visualization for most common words in toxic reviews has been removed from the code. Please run the code to view it
