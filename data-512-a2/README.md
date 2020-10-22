@@ -66,7 +66,7 @@ For the purpose of fetching data, processing and analyzing it, we require the fo
 Follow the steps to successfully execute the jupyter notebook:
 1) Download the folder **data-512-a2** or use git clone *repository url*
 2) Unzip the folder if you have downloaded from github (no need to unzip if you have cloned the repository on your system)
-3) Change directory to **data-512-a2** (cd data-512-a1)
+3) Change directory to **data-512-a2** (cd data-512-a2)
 4) Using Command Line on Windows or Terminal on Mac/Linux run the command **jupyter notebook** in the directory
 5) The command will open a URL similar to ***http://localhost:8888/tree*** in your default browser (The port 8888 might change if it is already occupied)
 6) You will be able to see all files of the folder **data-512-a2**
